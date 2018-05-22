@@ -1,6 +1,7 @@
 package com.kedrad.selftherapyball;
 
 import android.app.ListActivity;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +24,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Setting title in the toolbar
+        this.setTitle(R.string.menu_message);
+
+        //Loading image into the background
+        ImageView imageViewBackground = findViewById(R.id.iv_background);
+        GlideApp.with(this).load(R.drawable.front3).fitCenter().into(imageViewBackground);
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -42,4 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
