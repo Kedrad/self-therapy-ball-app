@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Self Therapy Ball</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_message">Czego ból odczuwasz?</string>
+
+    <string-array name="menu_pain">
+        <item>Karku</item>
+        <item>Stawu ramiennego (bark)</item>
+        <item>Odcinka piersiowego kręgosłupa</item>
+        <item>Odcinka lędźwiowego kręgosłupa</item>
+        <item>Stawu biodrowego (ból biodra)</item>
+        <item>Stawu kolanowego</item>
+        <item>Goleni (Achilles) oraz stawu skokowego</item>
+    </string-array>
+
+</resources>
