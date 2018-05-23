@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Loading image into the background
         ImageView imageViewBackground = findViewById(R.id.iv_background);
-        GlideApp.with(this).load(R.drawable.front3).fitCenter().into(imageViewBackground);
+        GlideApp.with(this).load(R.drawable.front_blurred).fitCenter().into(imageViewBackground);
 
     }
 

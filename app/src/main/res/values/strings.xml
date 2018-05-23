@@ -14,4 +14,57 @@
         <item>Goleni (Achilles) oraz stawu skokowego</item>
     </string-array>
 
+    <string-array name="neck">
+        <item>Mięśnie podpotyliczne</item>
+        <item>Prostowniki odcinka szyjnego</item>
+        <item>Dźwigacz łopatki</item>
+    </string-array>
+
+    <string-array name="shoulder">
+        <item>Dźwigacz łopatki</item>
+        <item>Mięśnie równoległoboczne</item>
+        <item>Mięsień najszerszy grzbietu</item>
+        <item>Mięśnie piersiowe</item>
+        <item>Przedni akton mięśnia naramiennego</item>
+    </string-array>
+    
+    <string-array name="thoracic_spine">
+        <item>Mięśnie równoległoboczne</item>
+        <item>Prostownik odcinka piersiowego oraz część wstępująca czworobocznego</item>
+        <item>Mięsień piersiowy mniejszy</item>
+    </string-array>
+
+    <string-array name="lumbar_spine">
+        <item>Czworoboczny lędźwi</item>
+        <item>Mięsień pośladkowy wielki</item>
+        <item>Mięsień gruszkowaty</item>
+        <item>Mięsień pośladkowy średni</item>
+        <item>Mięsień naprężacz powięzi szerokiej</item>
+        <item>Mięsień dwugłowy uda</item>
+    </string-array>
+
+    <string-array name="hips">
+        <item>Mięsień gruszkowaty</item>
+        <item>Mięsień pośladkowy średni</item>
+        <item>Mięsień naprężacz powięzi szerokiej</item>
+        <item>Mięśnie przywodzące</item>
+        <item>Mięsień dwugłowy uda</item>
+    </string-array>
+
+    <string-array name="knee">
+        <item>Mięsień pośladkowy średni</item>
+        <item>Mięsień naprężacz powięzi szerokiej</item>
+        <item>Głowa boczna mięśnia czworogłowego</item>
+        <item>Głowa przyśrodkowa mięśnia czworogłowego</item>
+        <item>Mięsień dwugłowy uda</item>
+        <item>Mięsień piszczelowy przedni</item>
+    </string-array>
+    
+    <string-array name="achilles_and_ankle_joint">
+        <item>Mięsień dwugłowy uda</item>
+        <item>Głowa przyśrodkowa brzuchatego</item>
+        <item>Głowa boczna brzuchatego</item>
+        <item>Piszczelowy przedni</item>
+        <item>Odwodziciel palucha</item>
+    </string-array>
 </resources>
