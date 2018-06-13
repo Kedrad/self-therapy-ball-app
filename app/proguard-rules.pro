@@ -28,3 +28,16 @@
 
 # for DexGuard only
 -keepresourcexmlelements manifest/application/meta-data@value=GlideModule
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keep class android.support.v8.renderscript.** { *; }
+
+-dontwarn carbon.BR
+-dontwarn carbon.internal**
+-dontwarn java.lang.invoke**
+
+-dontwarn android.databinding.**
+-keep class android.databinding.** { *; }

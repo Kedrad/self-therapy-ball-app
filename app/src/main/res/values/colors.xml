@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#2fab4d</color>
-    <!--<color name="colorPrimaryDark">#007b20</color>-->
+    <color name="colorPrimaryDark">#007b20</color>
+<!--
     <color name="colorPrimaryDark">#2fab4d</color>
+-->
     <color name="colorAccent">#2fab4d</color>
     <!--<color name="colorAccent">#59546d</color>-->
     <color name="black_alpha_toolbar">#86000000</color>
-    <color name="image_overlay_black">#AA000000</color>
+    <color name="image_overlay_black">#40000000</color>
     <color name="text_shadow">#88000000</color>
 </resources>

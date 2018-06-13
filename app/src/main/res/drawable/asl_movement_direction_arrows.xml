@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/up_down"
+        android:drawable="@drawable/ic_arrows_48"
+        android:state_checked="true"/>
+
+    <item
+        android:id="@+id/left_right"
+        android:drawable="@drawable/ic_arrows_48_horizontal"/>
+
+    <transition
+        android:drawable="@drawable/avd_movement_direction_arrows_up_down_to_left_right"
+        android:fromId="@id/up_down"
+        android:toId="@id/left_right"/>
+
+    <transition
+        android:drawable="@drawable/avd_movement_direction_arrows_left_right_to_up_down"
+        android:fromId="@id/left_right"
+        android:toId="@id/up_down"/>
+
+</animated-selector>

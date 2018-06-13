@@ -19,6 +19,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ExercisePlanActivity"
+            android:label="@string/title_activity_exercise_plan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kedrad.selftherapyball.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="@string/title_activity_exercise"
+            android:parentActivityName=".ExercisePlanActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kedrad.selftherapyball.ExercisePlanActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Self Therapy Ball</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_exercise_plan">ExercisePlanActivity</string>
+    <string name="title_activity_exercise">ExerciseActivity</string>
 
     <string name="menu_message">Czego ból odczuwasz?</string>
 
@@ -27,7 +29,7 @@
         <item>Mięśnie piersiowe</item>
         <item>Przedni akton mięśnia naramiennego</item>
     </string-array>
-    
+
     <string-array name="thoracic_spine">
         <item>Mięśnie równoległoboczne</item>
         <item>Prostownik odcinka piersiowego oraz część wstępująca czworobocznego</item>
@@ -59,7 +61,7 @@
         <item>Mięsień dwugłowy uda</item>
         <item>Mięsień piszczelowy przedni</item>
     </string-array>
-    
+
     <string-array name="achilles_and_ankle_joint">
         <item>Mięsień dwugłowy uda</item>
         <item>Głowa przyśrodkowa brzuchatego</item>
@@ -67,4 +69,7 @@
         <item>Piszczelowy przedni</item>
         <item>Odwodziciel palucha</item>
     </string-array>
+
+
+
 </resources>

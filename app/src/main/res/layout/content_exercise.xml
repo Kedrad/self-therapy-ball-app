@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ExerciseActivity"
+    tools:showIn="@layout/activity_exercise"
+    android:orientation="vertical">
+
+    <carbon.widget.ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/adductor_1"
+        android:adjustViewBounds="true"
+        app:carbon_elevation="@dimen/carbon_elevationHigh"
+        />
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="72sp"
+        android:textColor="@color/carbon_textColorDisabled_light"
+        android:text="60"
+        android:layout_gravity="center"/>
+
+    <com.ohoussein.playpause.PlayPauseView
+        android:id="@+id/play_pause_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:foreground="?android:selectableItemBackground"
+        app:fill_color="#f5f4f4"
+        app:pause_bg="@color/colorPrimary"
+        app:play_bg="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:carbon_elevation="@dimen/carbon_elevationHigh"
+        />
+
+    <carbon.widget.Divider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/carbon_Divider"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/btn_ball_location"
+            android:background="@drawable/ball_location_button_states"
+            />
+        <carbon.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ball_location"
+            android:text="Prawy dolny róg"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/carbon_TextAppearance.Title"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="4dp"
+            android:id="@+id/iv_movement_direction"
+            app:srcCompat="@drawable/asl_movement_direction_arrows"/>
+        <carbon.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_movement_direction"
+            android:text="Prawy dolny róg"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/carbon_TextAppearance.Title"/>
+    </LinearLayout>
+
+</carbon.widget.LinearLayout>
