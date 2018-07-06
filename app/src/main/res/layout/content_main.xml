@@ -9,14 +9,13 @@
     tools:showIn="@layout/activity_main">
 
     <ListView
-        android:id="@android:id/list"
+        android:id="@+id/listViewMenu"
         style="@style/Widget.AppCompat.ListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@android:drawable/divider_horizontal_dim_dark"
         android:entries="@array/menu_pain"
-        android:theme="@style/WhiteList">
+        android:theme="@style/WhiteList"/>
 
-    </ListView>
 
 </android.support.constraint.ConstraintLayout>

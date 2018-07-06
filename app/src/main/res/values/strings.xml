@@ -5,6 +5,7 @@
     <string name="title_activity_exercise">ExerciseActivity</string>
 
     <string name="menu_message">Czego ból odczuwasz?</string>
+    <string name="exercise_plan_activity_title">Plan</string>
 
     <string-array name="menu_pain">
         <item>Karku</item>
@@ -20,6 +21,24 @@
         <item>Mięśnie podpotyliczne</item>
         <item>Prostowniki odcinka szyjnego</item>
         <item>Dźwigacz łopatki</item>
+    </string-array>
+
+    <string-array name="neck_photos">
+        <item>@drawable/suboccipital_1</item>
+        <item>@drawable/neck_extensors_1</item>
+        <item>@drawable/levator_scapulae_1</item>
+    </string-array>
+
+    <string-array name="neck_ball_location">
+        <item>Pod głową w okolicy kości potylicznej</item>
+        <item>Okolica tylno-boczna szyi w połowie jej długości</item>
+        <item>Połowa odległości między szyją a barkiem</item>
+    </string-array>
+
+    <string-array name="neck_movement_direction">
+        <item>Poruszaj głową w górę i w dół, a po 30 sekundach w lewo i w prawo.</item>
+        <item>W górę i w dół poprzez uginanie kolan, a po 30 sekundach zmiana na w lewo i w prawo poprzez rotację ciała</item>
+        <item>W górę i w dół poprzez uginanie kolan, a po 30 sekundach zmiana na w lewo i w prawo poprzez rotację ciała</item>
     </string-array>
 
     <string-array name="shoulder">
@@ -69,7 +88,7 @@
         <item>Piszczelowy przedni</item>
         <item>Odwodziciel palucha</item>
     </string-array>
-
+    <string name="title_activity_ball_location">BallLocationActivity</string>
 
 
 </resources>

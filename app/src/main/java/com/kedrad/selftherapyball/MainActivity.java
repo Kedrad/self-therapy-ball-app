@@ -1,19 +1,25 @@
 package com.kedrad.selftherapyball;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +36,19 @@ public class MainActivity extends AppCompatActivity {
         //Loading image into the background
         ImageView imageViewBackground = findViewById(R.id.iv_background);
         GlideApp.with(this).load(R.drawable.front_blurred).fitCenter().into(imageViewBackground);
+
+        //Setting OnItemClickListner for the list
+        ListView listViewMenu = findViewById(R.id.listViewMenu);
+        listViewMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+                Intent intent = new Intent(MainActivity.this, ExercisePlanActivity.class);
+                int selectedItem = position;
+                intent.putExtra("selectedItem", selectedItem);
+                startActivity(intent);
+            }
+        });
 
     }
 
