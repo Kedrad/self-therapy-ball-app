@@ -2,6 +2,7 @@ package com.kedrad.selftherapyball;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,6 +20,8 @@ import android.widget.RelativeLayout;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 
+import java.util.Arrays;
+
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,10 +38,18 @@ public class MainActivity extends AppCompatActivity {
 
         //Loading image into the background
         ImageView imageViewBackground = findViewById(R.id.iv_background);
-        GlideApp.with(this).load(R.drawable.front_blurred).fitCenter().into(imageViewBackground);
+        //GlideApp.with(this).load(R.drawable.front_blurred).fitCenter().into(imageViewBackground);
+
+        //Filling menu list with content using custom ArrayAdapter
+        ListView listViewMenu = findViewById(R.id.listViewMenu);
+        TypedArray images = getResources().obtainTypedArray(R.array.menu_images);
+
+
+        String[] names = getResources().getStringArray(R.array.menu_pain);
+        String[] durations = getResources().getStringArray(R.array.menu_durations);
+        listViewMenu.setAdapter(new MenuListAdapter(this, images, names, durations));
 
         //Setting OnItemClickListner for the list
-        ListView listViewMenu = findViewById(R.id.listViewMenu);
         listViewMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,

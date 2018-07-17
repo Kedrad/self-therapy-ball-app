@@ -4,17 +4,27 @@
     <string name="title_activity_exercise_plan">ExercisePlanActivity</string>
     <string name="title_activity_exercise">ExerciseActivity</string>
 
-    <string name="menu_message">Czego ból odczuwasz?</string>
+    <string name="menu_message">Lokalizacja bólu</string>
     <string name="exercise_plan_activity_title">Plan</string>
 
     <string-array name="menu_pain">
-        <item>Karku</item>
-        <item>Stawu ramiennego (bark)</item>
-        <item>Odcinka piersiowego kręgosłupa</item>
-        <item>Odcinka lędźwiowego kręgosłupa</item>
-        <item>Stawu biodrowego (biodra)</item>
-        <item>Stawu kolanowego</item>
-        <item>Goleni (Achilles) oraz stawu skokowego</item>
+        <item>Kark</item>
+        <item>Staw ramienny (bark)</item>
+        <item>Odcinek piersiowy kręgosłupa</item>
+        <item>Odcinek lędźwiowy kręgosłupa</item>
+        <item>Staw biodrowy (biodro)</item>
+        <item>Staw kolanowy</item>
+        <item>Golenie (Achilles) oraz staw skokowy</item>
+    </string-array>
+
+    <string-array name="menu_durations">
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>3 min</item>
+        <item>6 min</item>
+        <item>5 min</item>
+        <item>6 min</item>
+        <item>5 min</item>
     </string-array>
 
     <string-array name="neck">

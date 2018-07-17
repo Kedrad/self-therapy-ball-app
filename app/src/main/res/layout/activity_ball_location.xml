@@ -47,8 +47,17 @@
     <carbon.widget.Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/button_start"
         android:layout_marginTop="500dp"
         android:layout_centerHorizontal="true"
         android:text="START"/>
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zacznij od tego punktu"
+        android:layout_marginTop="540dp"
+        android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>

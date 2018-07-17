@@ -13,7 +13,7 @@
         android:id="@+id/iv_picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/adductor_1"
+        android:src="@drawable/suboccipital_1"
         android:adjustViewBounds="true"
         app:carbon_elevation="@dimen/carbon_elevationHigh"
         />
@@ -21,6 +21,7 @@
     <carbon.widget.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/timer"
         android:textSize="72sp"
         android:textColor="@color/carbon_textColorDisabled_light"
         android:text="60"
@@ -51,7 +52,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <Button
             android:layout_width="48dp"
@@ -63,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_ball_location"
-            android:text="Prawy dolny róg"
+            android:text="Pod głową w okolicy kości potylicznej"
             android:layout_gravity="center_vertical"
             android:textAppearance="@style/carbon_TextAppearance.Title"/>
     </LinearLayout>
@@ -83,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_movement_direction"
-            android:text="Prawy dolny róg"
+            android:text="Poruszaj głową w lewo i w prawo"
             android:layout_gravity="center_vertical"
             android:textAppearance="@style/carbon_TextAppearance.Title"/>
     </LinearLayout>

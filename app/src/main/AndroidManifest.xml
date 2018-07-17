@@ -48,6 +48,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kedrad.selftherapyball.ExercisePlanActivity" />
         </activity>
-    </application>
 
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 </manifest>
