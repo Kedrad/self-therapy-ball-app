@@ -11,6 +11,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import com.kogitune.activity_transition.ActivityTransition;
 
 import carbon.widget.Button;
 
@@ -28,12 +31,12 @@ public class ExercisePlanActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Setting title in the toolbar
-        this.setTitle(R.string.exercise_plan_activity_title);
+        //Getting string array of the menu items for setting a title in the toolbar
+        String[] titles = getResources().getStringArray(R.array.menu_pain);
 
         //Loading image into the background
         ImageView imageViewBackground = findViewById(R.id.iv_background);
-        GlideApp.with(this).load(R.drawable.front_blurred).fitCenter().into(imageViewBackground);
+        GlideApp.with(this).load(R.drawable.front_plan_activity).fitCenter().into(imageViewBackground);
 
         selectedPlanId = getIntent().getIntExtra("selectedItem", 0);
 
@@ -43,35 +46,40 @@ public class ExercisePlanActivity extends AppCompatActivity {
 
         switch (selectedPlanId){
             case 0:
+                this.setTitle(titles[0]);
                 exerciseslistArray = getResources().getStringArray(R.array.neck);
                 break;
             case 1:
+                this.setTitle(titles[1]);
                 exerciseslistArray = getResources().getStringArray(R.array.shoulder);
                 break;
             case 2:
+                this.setTitle(titles[2]);
                 exerciseslistArray = getResources().getStringArray(R.array.thoracic_spine);
                 break;
             case 3:
+                this.setTitle(titles[3]);
                 exerciseslistArray = getResources().getStringArray(R.array.lumbar_spine);
                 break;
             case 4:
+                this.setTitle(titles[4]);
                 exerciseslistArray = getResources().getStringArray(R.array.hips);
                 break;
             case 5:
+                this.setTitle(titles[5]);
                 exerciseslistArray = getResources().getStringArray(R.array.knee);
                 break;
             case 6:
+                this.setTitle(titles[6]);
                 exerciseslistArray = getResources().getStringArray(R.array.achilles_and_ankle_joint);
                 break;
             default:
+                this.setTitle(titles[0]);
                 exerciseslistArray = getResources().getStringArray(R.array.neck);
                 break;
         }
 
-        listViewExercises.setAdapter(new ArrayAdapter<String>(
-                ExercisePlanActivity.this,
-                R.layout.listview_white_item,
-                exerciseslistArray));
+        listViewExercises.setAdapter(new ExercisePlanListAdapter(this, exerciseslistArray));
 
         //Setting OnItemClickListner for the list
         listViewExercises.setOnItemClickListener(new AdapterView.OnItemClickListener() {

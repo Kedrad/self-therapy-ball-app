@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dip"
+    android:orientation="horizontal"
+    app:carbon_elevation="@dimen/carbon_listItemHeight">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Muscle name -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_toRightOf="@+id/image"
+            android:text="Neck"
+            android:textColor="@color/carbon_black_54"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_marginRight="64dip"
+            android:layout_marginBottom="16dip"
+            android:layout_marginTop="16dip"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="128dip"
+            android:background="@color/carbon_dividerColor_light" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -16,6 +16,7 @@
         android:src="@drawable/suboccipital_1"
         android:adjustViewBounds="true"
         app:carbon_elevation="@dimen/carbon_elevationHigh"
+
         />
 
     <carbon.widget.TextView

@@ -100,5 +100,7 @@
     </string-array>
     <string name="title_activity_ball_location">BallLocationActivity</string>
 
+    <!--Activity transitions' strings-->
+    <string name="menu_item_to_title_transition">menu_item_to_title_transition</string>
 
 </resources>

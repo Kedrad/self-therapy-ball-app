@@ -34,7 +34,8 @@
         android:textColor="@color/carbon_black_54"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:typeface="sans" />
+        android:typeface="sans"
+        />
 
     <!-- Exercise duration -->
     <TextView
