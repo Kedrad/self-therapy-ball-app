@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file contains coordinates used for placing the ball location indicator on top of ImageViews in BallLocationActivity
+-->
+<resources>
+    <!--Pattern for GuidLine Views: left percentage, right percentage, top percentage, bottom percentage-->
+    <string-array name="neck_ball_location_coordinates">
+        <item>.48 .55 .11 .15</item>
+        <item>.47 .55 .15 .20</item>
+        <item>.51 .59 .19 .24</item>
+    </string-array>
+
+    <string-array name="shoulder_ball_location_coordinates">
+        <item>.51 .59 .19 .24</item>
+        <item>.50 .58 .24 .29</item>
+        <item>.57 .65 .27 .32</item>
+        <item>.57 .65 .22 .27</item>
+        <item>.65 .73 .24 .29</item>
+    </string-array>
+
+    <string-array name="thoracic_spine_ball_location_coordinates">
+        <item>.50 .58 .24 .29</item>
+        <item>.5 .58 .28 .33</item>
+        <item>.57 .65 .22 .27</item>
+    </string-array>
+
+    <string-array name="lumbar_spine_ball_location_coordinates">
+        <item>.5 .58 .37 .42</item>
+        <item>.52 .60 .46 .51</item>
+        <item>.52 .60 .51 .56</item>
+        <item>.55 .63 .46 .51</item>
+        <item>.48 .56 .46 .51</item>
+        <item>.54 .62 .61 .66</item>
+    </string-array>
+
+    <string-array name="hips_ball_location_coordinates">
+        <item>.52 .60 .51 .56</item>
+        <item>.55 .63 .46 .51</item>
+        <item>.48 .56 .46 .51</item>
+        <item>.49 .57 .57 .62</item>
+        <item>.54 .62 .61 .66</item>
+    </string-array>
+
+    <string-array name="knee_ball_location_coordinates">
+        <item>.55 .63 .46 .51</item>
+        <item>.48 .56 .46 .51</item>
+        <item>.60 .68 .57 .62</item>
+        <item>.52 .60 .67 .72</item>
+        <item>.54 .62 .61 .66</item>
+        <item>.58 .66 .80 .85</item>
+    </string-array>
+
+    <string-array name="achilles_and_ankle_joint_ball_location_coordinates">
+        <item>.54 .62 .61 .66</item>
+        <item>.32 .40 .75 .80</item>
+        <item>.56 .64 .75 .80</item>
+        <item>.58 .66 .80 .85</item>
+        <item>.30 .38 .86 .91</item>
+    </string-array>
+</resources>

@@ -17,12 +17,5 @@
         android:divider="@null"
         android:theme="@style/WhiteList"/>
 
-    <carbon.widget.Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_start"
-        android:layout_marginTop="450dp"
-        android:layout_centerHorizontal="true"
-        android:text="START"/>
 
 </RelativeLayout>

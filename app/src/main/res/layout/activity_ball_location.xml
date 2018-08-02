@@ -14,19 +14,7 @@
         android:src="@drawable/back"
         />
 
-    <pl.bclogic.pulsator4droid.library.PulsatorLayout
-        android:id="@+id/pulsator"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        app:pulse_color="@color/colorPrimary"
-        app:pulse_count="4"
-        app:pulse_duration="2000"
-        app:pulse_interpolator="Linear"
-        app:pulse_repeat="0"
-        app:pulse_startFromScratch="true"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="72dp"
-        />
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -37,27 +25,67 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         />
 
-    <TextView
-        android:id="@+id/textView"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_arrow_right"
+        android:layout_margin="24dp"
+        android:scaleType="center"/>
 
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <carbon.widget.Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_start"
-        android:layout_marginTop="500dp"
-        android:layout_centerHorizontal="true"
-        android:text="START"/>
+        <android.support.constraint.Guideline
+            android:id="@+id/left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".54" />
 
-    <carbon.widget.TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Zacznij od tego punktu"
-        android:layout_marginTop="540dp"
-        android:layout_centerHorizontal="true"/>
+        <android.support.constraint.Guideline
+            android:id="@+id/right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".62" />
 
+        <android.support.constraint.Guideline
+            android:id="@+id/top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".61" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".66" />
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+            app:layout_constraintRight_toRightOf="@+id/right_guideline"
+            app:layout_constraintTop_toTopOf="@+id/top_guideline"
+            app:layout_constraintVertical_bias="0.0"
+            app:pulse_color="@color/colorPrimary"
+            app:pulse_count="4"
+            app:pulse_duration="2000"
+            app:pulse_interpolator="Linear"
+            app:pulse_repeat="0"
+            app:pulse_startFromScratch="true" />
+
+    </android.support.constraint.ConstraintLayout>
 
 </RelativeLayout>

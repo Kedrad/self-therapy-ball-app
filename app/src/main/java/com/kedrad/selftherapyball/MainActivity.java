@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         String[] durations = getResources().getStringArray(R.array.menu_durations);
         listViewMenu.setAdapter(new MenuListAdapter(this, images, names, durations));
 
-        //Setting OnItemClickListner for the list
+        //Setting OnItemClickListener for the list
         listViewMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,

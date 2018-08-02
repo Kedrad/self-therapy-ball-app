@@ -3,9 +3,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_exercise_plan">ExercisePlanActivity</string>
     <string name="title_activity_exercise">ExerciseActivity</string>
+    <string name="title_activity_ball_location">Lokalizacja piłki</string>
 
     <string name="menu_message">Lokalizacja bólu</string>
-    <string name="exercise_plan_activity_title">Plan</string>
 
     <string-array name="menu_pain">
         <item>Kark</item>
@@ -95,12 +95,10 @@
         <item>Mięsień dwugłowy uda</item>
         <item>Głowa przyśrodkowa brzuchatego</item>
         <item>Głowa boczna brzuchatego</item>
-        <item>Piszczelowy przedni</item>
+        <item>Mięsień piszczelowy przedni</item>
         <item>Odwodziciel palucha</item>
     </string-array>
-    <string name="title_activity_ball_location">BallLocationActivity</string>
 
-    <!--Activity transitions' strings-->
-    <string name="menu_item_to_title_transition">menu_item_to_title_transition</string>
+
 
 </resources>

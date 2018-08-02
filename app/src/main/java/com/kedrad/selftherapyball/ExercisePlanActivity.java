@@ -19,8 +19,7 @@ import carbon.widget.Button;
 
 public class ExercisePlanActivity extends AppCompatActivity {
 
-    //ID of selected exercise plan from the menu activity
-    int selectedPlanId;
+    int selectedPlanId; //ID of selected exercise plan from the menu activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,18 +86,19 @@ public class ExercisePlanActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
                 Intent intent = new Intent(ExercisePlanActivity.this, BallLocationActivity.class);
-                int selectedItem = position;
-                intent.putExtra("selectedItem", selectedItem);
+
+                intent.putExtra("selectedMuscle", position);
+                intent.putExtra("selectedPlan", selectedPlanId);
                 startActivity(intent);
             }
         });
 
-        Button startButton = findViewById(R.id.button_start);
-        startButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ExercisePlanActivity.this, ExerciseActivity.class);
 
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ExercisePlanActivity.this, ExerciseActivity.class);
                 startActivity(intent);
             }
         });

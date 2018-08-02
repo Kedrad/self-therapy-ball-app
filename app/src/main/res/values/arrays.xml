@@ -9,4 +9,70 @@
         <item>@drawable/menu_item_knee</item>
         <item>@drawable/menu_item_achilles_and_ankle_joint</item>
     </integer-array>
+
+    <string-array name="main_menu_items">
+        <item>neck</item>
+        <item>shoulder</item>
+        <item>thoracic_spine</item>
+        <item>lumbar_spine</item>
+        <item>hips</item>
+        <item>knee</item>
+        <item>achilles_and_ankle_joint</item>
+    </string-array>
+
+    <!--Images for showing location of the ball-->
+
+    <integer-array name="neck_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+    </integer-array>
+
+    <integer-array name="shoulder_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/front</item>
+        <item>@drawable/front</item>
+    </integer-array>
+
+    <integer-array name="thoracic_spine_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/front</item>
+    </integer-array>
+
+    <integer-array name="lumbar_spine_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/side</item>
+        <item>@drawable/back</item>
+    </integer-array>
+
+    <integer-array name="hips_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/side</item>
+        <item>@drawable/front</item>
+        <item>@drawable/back</item>
+    </integer-array>
+
+    <integer-array name="knee_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/side</item>
+        <item>@drawable/front</item>
+        <item>@drawable/front</item>
+        <item>@drawable/back</item>
+        <item>@drawable/front</item>
+    </integer-array>
+
+    <integer-array name="achilles_and_ankle_joint_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/side</item>
+        <item>@drawable/back</item>
+        <item>@drawable/front</item>
+        <item>@drawable/side</item>
+    </integer-array>
 </resources>
