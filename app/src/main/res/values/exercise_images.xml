@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="neck_images">
+        <item>suboccipital_1 suboccipital_2</item>
+        <item>neck_extensors_1 neck_extensors_2 neck_extensors_3</item>
+        <item>levator_scapulae_1 levator_scapulae_2 levator_scapulae_3</item>
+    </string-array>
+
+    <string-array name="shoulder_images">
+        <item>levator_scapulae_1 levator_scapulae_2 levator_scapulae_3</item>
+        <item>rhomboid_muscles_1 rhomboid_muscles_2</item>
+        <item>infraspinatus_and_teres_muscles_1 infraspinatus_and_teres_muscles_2 infraspinatus_and_teres_muscles_3</item>
+        <item>latissimus_dorsi_muscle_1 latissimus_dorsi_muscle_2</item>
+        <item>pectoral_muscles_1 pectoral_muscles_2 pectoral_muscles_3</item>
+        <item>anterior_deltoid_1 anterior_deltoid_2 anterior_deltoid_3</item>
+    </string-array>
+
+    <string-array name="thoracic_spine_images">
+        <item>rhomboid_muscles_1 rhomboid_muscles_2</item>
+        <item>erector_spinae_and_trapezius_ascending_1 erector_spinae_and_trapezius_ascending_2 erector_spinae_and_trapezius_ascending_3</item>
+        <item>pectoral_muscles_1 pectoral_muscles_2 pectoral_muscles_3</item>
+    </string-array>
+
+    <string-array name="lumbar_spine_images">
+        <item>quadratus_lumborum_1 quadratus_lumborum_2</item>
+        <item>gluteus_maximus_1 gluteus_maximus_2</item>
+        <item>piriformis_1 piriformis_2</item>
+        <item>gluteus_medius_1 gluteus_medius_2</item>
+        <item>tensor_fasciae_latae_1 tensor_fasciae_latae_2</item>
+        <item>biceps_femoris_1 biceps_femoris_2</item>
+    </string-array>
+
+    <string-array name="hips_images">
+        <item>piriformis_1 piriformis_2</item>
+        <item>gluteus_medius_1 gluteus_medius_2</item>
+        <item>tensor_fasciae_latae_1 tensor_fasciae_latae_2</item>
+        <item>adductor_1 adductor_2</item>
+        <item>biceps_femoris_1 biceps_femoris_2</item>
+    </string-array>
+
+    <string-array name="knee_images">
+        <item>gluteus_medius_1 gluteus_medius_2</item>
+        <item>tensor_fasciae_latae_1 tensor_fasciae_latae_2</item>
+        <item>vastus_lateralis_1 vastus_lateralis_2</item>
+        <item>vastus_medialis_1 vastus_medialis_2</item>
+        <item>biceps_femoris_1 biceps_femoris_2</item>
+        <item>tibialis_anterior_1 tibialis_anterior_2</item>
+    </string-array>
+
+    <string-array name="achilles_and_ankle_joint_images">
+        <item>biceps_femoris_1 biceps_femoris_2</item>
+        <item>gastrocnemius_medial_head_1 gastrocnemius_medial_head_2</item>
+        <item>gastrocnemius_lateral_head_1 gastrocnemius_lateral_head_2</item>
+        <item>tibialis_anterior_1 tibialis_anterior_2</item>
+        <item>abductor_hallucis_1 abductor_hallucis_2</item>
+    </string-array>
+</resources>

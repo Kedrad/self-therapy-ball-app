@@ -9,86 +9,181 @@
     tools:showIn="@layout/activity_exercise"
     android:orientation="vertical">
 
-    <carbon.widget.ImageView
-        android:id="@+id/iv_picture"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/suboccipital_1"
-        android:adjustViewBounds="true"
-        app:carbon_elevation="@dimen/carbon_elevationHigh"
 
-        />
-
-    <carbon.widget.TextView
+    <carbon.widget.FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/timer"
-        android:textSize="72sp"
-        android:textColor="@color/carbon_textColorDisabled_light"
-        android:text="60"
-        android:layout_gravity="center"/>
-
-    <com.ohoussein.playpause.PlayPauseView
-        android:id="@+id/play_pause_view"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:foreground="?android:selectableItemBackground"
-        app:fill_color="#f5f4f4"
-        app:pause_bg="@color/colorPrimary"
-        app:play_bg="@color/colorPrimaryDark"
-        android:layout_gravity="center"
-        android:clickable="true"
+        android:adjustViewBounds="true"
         app:carbon_elevation="@dimen/carbon_elevationHigh"
-        />
+        android:background="#ffffff">
 
-    <carbon.widget.Divider
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        style="@style/carbon_Divider"
-        />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        <ImageSwitcher
+            android:id="@+id/image_switcher_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
-        <Button
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/btn_ball_location"
-            android:background="@drawable/ball_location_button_states"
+            <carbon.widget.ImageView
+                android:id="@+id/iv_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abductor_hallucis_1"
+                android:adjustViewBounds="true"
+
+                />
+            <carbon.widget.ImageView
+                android:id="@+id/iv_instruction2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abductor_hallucis_1"
+                android:adjustViewBounds="true"
+                />
+
+        </ImageSwitcher>
+    </carbon.widget.FrameLayout>
+
+
+        <carbon.widget.FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/carbon_grey_300"
+                app:backgroundStrokeWidth="5dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/colorPrimary"
+                app:foregroundStrokeWidth="5dp"
+                app:indeterminate="false"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:indeterminateMinimumAngle="45"
+                app:maximum="60000"
+                app:progress="0"
+                app:progressAnimationDuration="100"
+                app:startAngle="270"
+                android:layout_gravity="center"
+                />
+
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timer"
+                android:textSize="@dimen/exercise_activity_timer_text_size"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/carbon_textColorDisabled_light"
+                android:text="60"
+                android:layout_gravity="center"/>
+        </carbon.widget.FrameLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_arrow_back"
+                android:layout_marginRight="10dp"/>
+
+
+            <carbon.widget.FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <carbon.widget.FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="8dp" app:carbon_elevation="@dimen/carbon_elevationFAB" android:layout_gravity="bottom|right"
+                    app:carbon_cornerRadius="64dp">
+                    <com.ohoussein.playpause.PlayPauseView
+                        android:id="@+id/play_pause_view"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:foreground="?android:selectableItemBackground"
+                        app:fill_color="#f5f4f4"
+                        app:pause_bg="@color/colorPrimary"
+                        app:play_bg="@color/colorPrimaryDark"
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        />
+                </carbon.widget.FrameLayout>
+            </carbon.widget.FrameLayout>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_arrow_forward"
+                android:layout_marginLeft="10dp"
+                android:padding="6dp"/>
+        </carbon.widget.LinearLayout>
+
+
+
+        <carbon.widget.Divider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/carbon_Divider"
             />
-        <carbon.widget.TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_ball_location"
-            android:text="Pod głową w okolicy kości potylicznej"
-            android:layout_gravity="center_vertical"
-            android:textAppearance="@style/carbon_TextAppearance.Title"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:padding="4dp"
-            android:id="@+id/iv_movement_direction"
-            app:srcCompat="@drawable/asl_movement_direction_arrows"/>
-        <carbon.widget.TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_movement_direction"
-            android:text="Poruszaj głową w lewo i w prawo"
-            android:layout_gravity="center_vertical"
-            android:textAppearance="@style/carbon_TextAppearance.Title"/>
-    </LinearLayout>
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/btn_ball_location"
+                android:background="@drawable/ball_location_button_states"
+                />
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ball_location"
+                android:text="Pod głową w okolicy kości potylicznej"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/carbon_grey_600"
+                android:textSize="@dimen/exercise_activity_bottom_text_size"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:id="@+id/iv_movement_direction"
+                app:srcCompat="@drawable/asl_movement_direction_arrows"/>
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movement_direction"
+                android:text="Poruszaj głową w lewo i w prawo"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/carbon_grey_600"
+                android:textSize="@dimen/exercise_activity_bottom_text_size"/>
+        </LinearLayout>
+
+
 
 </carbon.widget.LinearLayout>

@@ -33,11 +33,6 @@
         <item>Dźwigacz łopatki</item>
     </string-array>
 
-    <string-array name="neck_photos">
-        <item>@drawable/suboccipital_1</item>
-        <item>@drawable/neck_extensors_1</item>
-        <item>@drawable/levator_scapulae_1</item>
-    </string-array>
 
     <string-array name="neck_ball_location">
         <item>Pod głową w okolicy kości potylicznej</item>
@@ -54,6 +49,7 @@
     <string-array name="shoulder">
         <item>Dźwigacz łopatki</item>
         <item>Mięśnie równoległoboczne</item>
+        <item>Mięsień podgrzebieniowy oraz mięśnie obłe</item>
         <item>Mięsień najszerszy grzbietu</item>
         <item>Mięśnie piersiowe</item>
         <item>Przedni akton mięśnia naramiennego</item>

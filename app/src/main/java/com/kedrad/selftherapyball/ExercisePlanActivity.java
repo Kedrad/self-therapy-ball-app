@@ -99,6 +99,8 @@ public class ExercisePlanActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ExercisePlanActivity.this, ExerciseActivity.class);
+                intent.putExtra("selectedMuscle", 0);
+                intent.putExtra("selectedPlan", selectedPlanId);
                 startActivity(intent);
             }
         });

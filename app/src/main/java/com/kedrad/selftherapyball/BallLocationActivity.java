@@ -48,6 +48,8 @@ public class BallLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
+                intent.putExtra("selectedPlan", selectedPlanId);
+                intent.putExtra("selectedMuscle", selectedMuscleId);
                 startActivity(intent);
             }
         });

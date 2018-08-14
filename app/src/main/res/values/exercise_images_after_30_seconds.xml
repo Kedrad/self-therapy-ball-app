@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="neck_images_after_30_seconds">
+        <item>suboccipital_3 suboccipital_4</item>
+        <item>neck_extensors_3 neck_extensors_4 neck_extensors_5</item>
+        <item>levator_scapulae_4, levator_scapulae_5, levator_scapulae_6</item>
+    </string-array>
+
+    <string-array name="shoulder_images_after_30_seconds">
+        <item>levator_scapulae_4 levator_scapulae_5 levator_scapulae_6</item>
+        <item>rhomboid_muscles_3 rhomboid_muscles_4</item>
+        <item>infraspinatus_and_teres_muscles_4 infraspinatus_and_teres_muscles_5 infraspinatus_and_teres_muscles_6</item>
+        <item>latissimus_dorsi_muscle_3 latissimus_dorsi_muscle_4</item>
+        <item>pectoral_muscles_4 pectoral_muscles_5 pectoral_muscles_6</item>
+        <item>anterior_deltoid_4 anterior_deltoid_5 anterior_deltoid_6</item>
+    </string-array>
+
+    <string-array name="thoracic_spine_images_after_30_seconds">
+        <item>rhomboid_muscles_3 rhomboid_muscles_4</item>
+        <item>erector_spinae_and_trapezius_ascending_4 erector_spinae_and_trapezius_ascending_5 erector_spinae_and_trapezius_ascending_6</item>
+        <item>pectoral_muscles_4 pectoral_muscles_5 pectoral_muscles_6</item>
+    </string-array>
+
+    <string-array name="lumbar_spine_images_after_30_seconds">
+        <item>quadratus_lumborum_3 quadratus_lumborum_4</item>
+        <item>gluteus_maximus_3 gluteus_maximus_4</item>
+        <item>piriformis_3 piriformis_4</item>
+        <item> gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
+        <item>tensor_fasciae_latae_3 tensor_fasciae_latae_4</item>
+        <item>biceps_femoris_3 biceps_femoris_4</item>
+    </string-array>
+
+    <string-array name="hips_images_after_30_seconds">
+        <item>piriformis_3 piriformis_4</item>
+        <item>gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
+        <item>tensor_fasciae_latae_3 tensor_fasciae_latae_4</item>
+        <item>adductor_3 adductor_4</item>
+        <item>biceps_femoris_3 biceps_femoris_4</item>
+    </string-array>
+
+    <string-array name="knee_images_after_30_seconds">
+        <item> gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
+        <item>tensor_fasciae_latae_3 tensor_fasciae_latae_4</item>
+        <item>vastus_lateralis_3 vastus_lateralis_4</item>
+        <item>vastus_medialis_3 vastus_medialis_4</item>
+        <item>biceps_femoris_3 biceps_femoris_4</item>
+        <item>tibialis_anterior_3 tibialis_anterior_4</item>
+    </string-array>
+
+    <string-array name="achilles_and_ankle_joint_images_after_30_seconds">
+        <item>biceps_femoris_3 biceps_femoris_4</item>
+        <item>gastrocnemius_medial_head_3 gastrocnemius_medial_head_4</item>
+        <item>gastrocnemius_lateral_head_3 gastrocnemius_lateral_head_4</item>
+        <item>tibialis_anterior_3 tibialis_anterior_4</item>
+        <item>abductor_hallucis_3 abductor_hallucis_4</item>
+    </string-array>
+</resources>
