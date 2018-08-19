@@ -4,11 +4,12 @@
     <item
         android:id="@+id/up_down"
         android:drawable="@drawable/ic_arrows_48"
-        android:state_checked="true"/>
+        android:state_checked="false"/>
 
     <item
         android:id="@+id/left_right"
-        android:drawable="@drawable/ic_arrows_48_horizontal"/>
+        android:drawable="@drawable/ic_arrows_48_horizontal"
+        android:state_checked="true"/>
 
     <transition
         android:drawable="@drawable/avd_movement_direction_arrows_up_down_to_left_right"

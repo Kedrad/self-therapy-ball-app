@@ -50,7 +50,9 @@ public class BallLocationActivity extends AppCompatActivity {
                 Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
                 intent.putExtra("selectedPlan", selectedPlanId);
                 intent.putExtra("selectedMuscle", selectedMuscleId);
+                finish();
                 startActivity(intent);
+
             }
         });
     }

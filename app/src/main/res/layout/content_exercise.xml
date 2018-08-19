@@ -92,6 +92,7 @@
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:id="@+id/fab_previous_exercise"
                 android:scaleType="center"
                 app:srcCompat="@drawable/ic_arrow_back"
                 android:layout_marginRight="10dp"/>
@@ -123,6 +124,7 @@
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:id="@+id/fab_next_exercise"
                 android:scaleType="center"
                 app:srcCompat="@drawable/ic_arrow_forward"
                 android:layout_marginLeft="10dp"
@@ -163,7 +165,16 @@
                 />
         </LinearLayout>
 
-        <LinearLayout
+    <carbon.widget.Divider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        style="@style/carbon_Divider"
+        />
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
