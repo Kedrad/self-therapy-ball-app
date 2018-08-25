@@ -1,5 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="exercise_activity_bottom_text_size">13.5sp</dimen>
-    <dimen name="exercise_activity_timer_text_size">36</dimen>
+    <dimen name="exercise_activity_timer_text_size">42sp</dimen>
 </resources>

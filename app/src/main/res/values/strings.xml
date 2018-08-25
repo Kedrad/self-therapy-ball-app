@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Self Therapy Ball</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_how_to">Jak używać aplikacji?</string>
     <string name="title_activity_exercise_plan">ExercisePlanActivity</string>
     <string name="title_activity_exercise">ExerciseActivity</string>
     <string name="title_activity_ball_location">Lokalizacja piłki</string>
@@ -173,7 +173,7 @@
         <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
         <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
     </string-array>
-    
+
     <string-array name="hips_movement_direction_after_30_seconds">
         <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
         <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
@@ -190,7 +190,7 @@
         <item>Mięsień dwugłowy uda</item>
         <item>Mięsień piszczelowy przedni</item>
     </string-array>
-    
+
     <string-array name="knee_ball_location">
         <item>Tylno-boczna część mięśni pośladkowych, poniżej grzebienia biodrowego</item>
         <item>Przednio-boczna strona stawu biodrowego</item>
@@ -249,5 +249,28 @@
         <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
         <item>Ruch w lewo i w prawo poprzez przetaczanie piłki stopą</item>
     </string-array>
+
+    <!--Showcase strings-->
+    <string name="showcase_got_it_text">ROZUMIEM</string>
+    <string name="showcase_got_it_text_end">ZACZYNAJMY!</string>
+    <string name="showcase_text_main_activity">Na tym ekranie wybierasz lokalizację Twojego bólu</string>
+    <string name="showcase_text_exercise_plan_activity">Tu możesz wybrać poszczególne mięśnie</string>
+    <string name="showcase_text_exercise_plan_activity_1">Wybierając jeden z nich możesz zobaczyć lokalizację piłki</string>
+    <string name="showcase_text_ball_location_activity">Umiejscowienie piłki wskaże Ci zielona, pulsująca ikona</string>
+    <string name="showcase_text_ball_location_activity_1">Ten przycisk rozpoczyna trening</string>
+    <string name="showcase_text_exercise_activity">Na górze wyświetlane są zdjęcia ilustrujące sposób ćwiczenia</string>
+    <string name="showcase_text_exercise_activity_1">Licznik pokazuje Ci jak długo jeszcze będzie trwało ćwiczenie</string>
+    <string name="showcase_text_exercise_activity_2">Tu znajdują się przyciski nawigacyjne</string>
+    <string name="showcase_text_exercise_activity_3">Ten przycisk pozwala Ci przypomnieć gdzie powinna być umiejscowiona piłka</string>
+    <string name="showcase_text_exercise_activity_4">A tu znajdziesz informację o kierunku ruchu</string>
+    <string name="showcase_text_exercise_activity_5">Ten dźwięk usłyszysz po 30 sekundach, to czas na zmianę kierunku ruchu</string>
+    <string name="showcase_text_exercise_activity_6">A ten oznacza koniec ćwiczenia\nMożesz użyć przycisków nawigacyjnych aby przejść do następnego</string>
+    <string name="showcase_text_exercise_activity_7">To wszystko\nKlikając ten przycisk możesz w każdej chwili wyświetlić poradnik jeszcze raz</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_introduction">IntroductionActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>

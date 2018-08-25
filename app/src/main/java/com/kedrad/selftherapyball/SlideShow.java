@@ -97,9 +97,6 @@ public class SlideShow {
                     currentImageIndex = 1;
                 }
 
-
-
-
                 ((Activity)context).runOnUiThread(new Runnable() {
                     public void run() {
                         imageSwitcher.getNextView().setVisibility(View.INVISIBLE);
@@ -135,7 +132,8 @@ public class SlideShow {
     }
 
     public void stop(){
-        slideshowTimer.cancel();
+        if(slideshowTimer != null)
+            slideshowTimer.cancel();
     }
 
     public void changeToSecondImageArray(){

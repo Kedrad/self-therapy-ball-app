@@ -8,11 +8,24 @@
     tools:context=".ExercisePlanActivity"
     tools:showIn="@layout/activity_exercise_plan">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_39sdp"
+        android:id="@+id/showcase_view_list_item"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_150sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:id="@+id/showcase_view_list"
+        android:layout_marginRight="@dimen/_100sdp"/>
+
     <ListView
         android:id="@+id/listViewExercises"
         style="@style/Widget.AppCompat.ListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:dividerHeight="0dp"
         android:divider="@null"
         android:theme="@style/WhiteList"/>
