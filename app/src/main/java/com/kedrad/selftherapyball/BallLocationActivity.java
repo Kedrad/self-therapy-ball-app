@@ -17,6 +17,7 @@ import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import carbon.widget.Button;
 import pl.bclogic.pulsator4droid.library.PulsatorLayout;
 import uk.co.deanwild.materialshowcaseview.IShowcaseListener;
@@ -42,6 +43,7 @@ public class BallLocationActivity extends AppCompatActivity {
     @BindView(R.id.pulsator) PulsatorLayout pulsator;
     @BindView(R.id.fab) FloatingActionButton fab;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,15 +66,16 @@ public class BallLocationActivity extends AppCompatActivity {
         //Setting title in the toolbar
         setTitle(R.string.title_activity_ball_location);
 
+
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
                 intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
                 intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
-                finish();
                 startActivity(intent);
-
+                finish();
             }
         });
 
@@ -81,6 +84,7 @@ public class BallLocationActivity extends AppCompatActivity {
             showShowcase();
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

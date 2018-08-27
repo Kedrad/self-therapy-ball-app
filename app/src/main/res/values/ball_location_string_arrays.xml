@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Strings used in the Exercise Activity-->
+    <string-array name="neck_ball_location">
+        <item>Pod głową w okolicy kości potylicznej</item>
+        <item>Okolica tylno-boczna szyi w połowie jej długości</item>
+        <item>Połowa odległości między szyją a barkiem</item>
+    </string-array>
+
+    <string-array name="shoulder_ball_location">
+        <item>Połowa odległości między szyją a barkiem</item>
+        <item>Na wysokości łopatek, między odcinkiem piersiowym kręgosłupa a łopatką</item>
+        <item>Tylno-boczna strona stawu ramiennego, okolice mięśnia naramiennego oraz łopatki</item>
+        <item>Tylno-boczna strona klatki piersiowej</item>
+        <item>Połowa odległości na linii między obojczykiem a sutkiem</item>
+        <item>Przednio-boczna cześć stawu ramiennego</item>
+    </string-array>
+
+    <string-array name="thoracic_spine_ball_location">
+        <item>Na wysokości łopatek, między odcinkiem piersiowym kręgosłupa a łopatką</item>
+        <item>Okolice kąta dolnego łopatki, w połowie odcinka piersiowego kręgosłupa</item>
+        <item>Połowa odległości na linii między obojczykiem a sutkiem</item>
+    </string-array>
+
+    <string-array name="lumbar_spine_ball_location">
+        <item>Tylno-boczna strona tułowia, połowa długości miedzy klatką piersiową a biodrem</item>
+        <item>Na mięśniu pośladkowym wielkim w jego centralnej części</item>
+        <item>Dolna część mięśnia pośladkowego, między krętarzem kości udowej a kością krzyżową</item>
+        <item>Tylno-boczna część mięśni pośladkowych, poniżej grzebienia biodrowego</item>
+        <item>Przednio-boczna strona stawu biodrowego</item>
+        <item>Tylno-boczna część uda w połowie długości</item>
+    </string-array>
+
+    <string-array name="hips_ball_location">
+        <item>Dolna część mięśnia pośladkowego, między krętarzem kości udowej a kością krzyżową</item>
+        <item>Tylno-boczna część mięśni pośladkowych, poniżej grzebienia biodrowego</item>
+        <item>Przednio-boczna strona stawu biodrowego</item>
+        <item>Bliższa, przyśrodkowa część uda na przebiegu przywodzicieli</item>
+        <item>Tylno-boczna część uda w połowie długości</item>
+    </string-array>
+
+    <string-array name="knee_ball_location">
+        <item>Tylno-boczna część mięśni pośladkowych, poniżej grzebienia biodrowego</item>
+        <item>Przednio-boczna strona stawu biodrowego</item>
+        <item>Przednio-boczna część uda w połowie długości</item>
+        <item>Przyśrodkowa cześć uda nad stawem kolanowym</item>
+        <item>Tylno-boczna część uda w połowie długości</item>
+        <item>Przednio-boczna część goleni w połowie długości</item>
+    </string-array>
+
+    <string-array name="achilles_and_ankle_joint_ball_location">
+        <item>Tylno-boczna część uda w połowie długości</item>
+        <item>Tylno-przyśrodkowa część goleni w połowie długości</item>
+        <item>Tylno-boczna część goleni w połowie długości</item>
+        <item>Przednio-boczna część goleni w połowie długości</item>
+        <item>Przyśrodkowa strona stopy</item>
+    </string-array>
+
+</resources>

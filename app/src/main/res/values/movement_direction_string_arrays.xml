@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="neck_movement_direction">
+        <item>Ruch głową w górę i w dół</item>
+        <item>Ruch w górę i w dół poprzez uginanie kolan</item>
+        <item>Ruch w górę i w dół poprzez uginanie kolan</item>
+    </string-array>
+
+    <string-array name="neck_movement_direction_after_30_seconds">
+        <item>Ruch głową w lewo i w prawo</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+    </string-array>
+
+    <string-array name="shoulder_movement_direction">
+        <item>Ruch w górę i w dół poprzez uginanie kolan</item>
+        <item>W górę i w dół poprzez odpychanie się z kończyn dolnych</item>
+        <item>Ruch w górę i w dół poprzez zgięcie boczne tułowia</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez uginanie kolan</item>
+        <item>Ruch w górę i w dół  poprzez przenoszenie ciężaru ciała z lewej na prawą nogę</item>
+    </string-array>
+
+    <string-array name="shoulder_movement_direction_after_30_seconds">
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+    </string-array>
+
+    <string-array name="thoracic_spine_movement_direction">
+        <item>W górę i w dół poprzez odpychanie się z kończyn dolnych</item>
+        <item>Ruch w górę i w dół poprzez uginanie kolan</item>
+        <item>Ruch w górę i w dół poprzez uginanie kolan</item>
+    </string-array>
+
+    <string-array name="thoracic_spine_movement_direction_after_30_seconds">
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+    </string-array>
+
+    <string-array name="lumbar_spine_movement_direction">
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+    </string-array>
+
+    <string-array name="lumbar_spine_movement_direction_after_30_seconds">
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+    </string-array>
+
+    <string-array name="hips_movement_direction">
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+    </string-array>
+
+    <string-array name="hips_movement_direction_after_30_seconds">
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+    </string-array>
+
+    <string-array name="knee_movement_direction">
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez przesuwnie ciała po podłożu</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+    </string-array>
+
+    <string-array name="knee_movement_direction_after_30_seconds">
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+    </string-array>
+
+    <string-array name="achilles_and_ankle_joint_movement_direction">
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez odpychanie się z kończyny podporowej</item>
+        <item>Ruch w górę i w dół poprzez przetaczanie piłki stopą</item>
+    </string-array>
+
+    <string-array name="achilles_and_ankle_joint_movement_direction_after_30_seconds">
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez rotację ciała</item>
+        <item>Ruch w lewo i w prawo poprzez przetaczanie piłki stopą</item>
+    </string-array>
+
+</resources>

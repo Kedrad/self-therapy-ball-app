@@ -60,6 +60,7 @@ import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.bumptech.glide.request.transition.ViewPropertyTransition;
+import com.kogitune.activity_transition.ActivityTransition;
 import com.ohoussein.playpause.PlayPauseView;
 
 import java.util.Timer;
@@ -227,6 +228,18 @@ public class ExerciseActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //When ball location button is clicked, start the ball location activity
+        btnBallLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ExerciseActivity.this, BallLocationActivity.class);
+
+                intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
+                intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean obtainImages(String selectedPlan, int muscleId, Context context){
@@ -259,18 +272,6 @@ public class ExerciseActivity extends AppCompatActivity {
         movementDirectionTexts[1] = getResources().getStringArray(movementDirectionAfter30SecondsArrayId)[selectedMuscleId];
 
         tvMovementDirection.setText(movementDirectionTexts[0]);
-
-        //When ball location button is clicked, start the ball location activity
-        btnBallLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ExerciseActivity.this, BallLocationActivity.class);
-
-                intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId + 1);
-                intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
-                startActivity(intent);
-            }
-        });
 
         //On the first exercise disable the previous button
         if(selectedMuscleId == 0) {
