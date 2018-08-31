@@ -2,7 +2,7 @@
 Self-Therapy Ball App is an Android application that makes using your therapeutic [Self-Therapy Ball](https://s-therapy.com/) easier. 
 
 ## Screenshots
-<img src="https://github.com/Kedrad/self-therapy-ball-app/raw/master/1.png" width="300"> <img src="https://github.com/Kedrad/self-therapy-ball-app/raw/master/2.png" width="300"> <img src="https://github.com/Kedrad/self-therapy-ball-app/raw/master/3.png" width="300"> <img src="https://github.com/Kedrad/self-therapy-ball-app/raw/master/4.png" width="300">
+<img src="https://github.com/Kedrad/self-therapy-ball-app/blob/master/screenshots/1.png" width="300"> <img src="https://github.com/Kedrad/self-therapy-ball-app/blob/master/screenshots/2.png" width="300"> <img src="https://github.com/Kedrad/self-therapy-ball-app/blob/master/screenshots/3.png" width="300"> <img src="https://github.com/Kedrad/self-therapy-ball-app/blob/master/screenshots/4.png" width="300">
 
 ## Libraries used
 
