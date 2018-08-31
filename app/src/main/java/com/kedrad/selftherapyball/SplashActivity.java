@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 
 import com.kogitune.activity_transition.ActivityTransitionLauncher;
 
@@ -12,6 +13,10 @@ public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+
+
         super.onCreate(savedInstanceState);
 
         Intent intent;

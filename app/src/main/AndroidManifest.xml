@@ -38,7 +38,6 @@
             android:name=".BallLocationActivity"
             android:exported="true"
             android:label="@string/title_activity_ball_location"
-            android:parentActivityName=".ExercisePlanActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

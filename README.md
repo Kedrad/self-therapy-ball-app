@@ -16,8 +16,3 @@ Self-Therapy Ball App is an Android application that makes using your therapeuti
  * [SSP](https://github.com/intuit/ssp)
  * [MaterialShowcaseView](https://github.com/deano2390/MaterialShowcaseView)
  * [AppIntro](https://github.com/apl-devs/AppIntro)
-<<<<<<< HEAD
- 
-=======
- 
->>>>>>> 871bea5d144a86c8a9fc7345810528ba68a02a7f

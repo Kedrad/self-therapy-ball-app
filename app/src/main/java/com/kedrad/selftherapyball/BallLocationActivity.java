@@ -71,10 +71,14 @@ public class BallLocationActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
-                intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
-                intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
-                startActivity(intent);
+                //If activity wasn't started from the Exercise Activity, but from the Exercise Plan, start the new Exercsie Activity
+                if(getCallingActivity() == null) {
+                    Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
+                    intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
+                    intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
+                    startActivity(intent);
+                }
+
                 finish();
             }
         });
@@ -106,7 +110,18 @@ public class BallLocationActivity extends AppCompatActivity {
             return true;
         }
 
+        if(id == android.R.id.home) {
+            finish();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
     }
 
     private void setBackgroundImage(){

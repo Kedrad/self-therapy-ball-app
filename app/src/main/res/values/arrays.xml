@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer-array name="menu_images">
+<!--    <integer-array name="menu_images">
         <item>@drawable/menu_item_head</item>
         <item>@drawable/menu_item_shoulder</item>
         <item>@drawable/menu_item_thoracic_spine</item>
@@ -8,7 +8,16 @@
         <item>@drawable/menu_item_hips</item>
         <item>@drawable/menu_item_knee</item>
         <item>@drawable/menu_item_achilles_and_ankle_joint</item>
-    </integer-array>
+    </integer-array>-->
+    <string-array name="menu_images">
+        <item>menu_item_head</item>
+        <item>menu_item_shoulder</item>
+        <item>menu_item_thoracic_spine</item>
+        <item>menu_item_lumbar_spine</item>
+        <item>menu_item_hips</item>
+        <item>menu_item_knee</item>
+        <item>menu_item_achilles_and_ankle_joint</item>
+    </string-array>
 
     <string-array name="main_menu_items">
         <item>neck</item>

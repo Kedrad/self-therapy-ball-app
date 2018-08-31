@@ -22,8 +22,11 @@ import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
+import android.support.v7.content.res.AppCompatResources;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -69,7 +72,6 @@ import java.util.TimerTask;
 import static com.kedrad.selftherapyball.MainActivity.COMPLETED_FIRST_LAUNCH_SHOWCASE_PREF_NAME;
 
 public class ExerciseActivity extends AppCompatActivity {
-
     //ID of selected exercise plan from the menu activity
     private int selectedPlanId;
     //ID of selected muscle from the list in the exercise plan
@@ -83,6 +85,7 @@ public class ExerciseActivity extends AppCompatActivity {
     private String[] movementDirectionTexts = new String[2];
 
     private boolean isChecked = true;
+
     private boolean isCountdownRunning = false;
 
     private float progress = 0;
@@ -116,6 +119,7 @@ public class ExerciseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
         ButterKnife.bind(this);
@@ -237,7 +241,7 @@ public class ExerciseActivity extends AppCompatActivity {
 
                 intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
                 intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
-                startActivity(intent);
+                startActivityForResult(intent, 0);
             }
         });
     }
@@ -265,6 +269,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 getIdentifier(selectedPlanName + MOVEMENT_DIRECTION_AFTER_30_SECONDS_ARRAY_SUFFIX, "array", this.getPackageName());
 
         tvBallLocation.setText(getResources().getStringArray(ballLocationArrayId)[selectedMuscleId]);
+        btnBallLocation.setBackgroundDrawable(AppCompatResources.getDrawable(this, R.drawable.ball_location_button_states));
 
         //Initial movement direction
         movementDirectionTexts[0] = getResources().getStringArray(movementDirectionArrayId)[selectedMuscleId];
@@ -272,6 +277,7 @@ public class ExerciseActivity extends AppCompatActivity {
         movementDirectionTexts[1] = getResources().getStringArray(movementDirectionAfter30SecondsArrayId)[selectedMuscleId];
 
         tvMovementDirection.setText(movementDirectionTexts[0]);
+
 
         //On the first exercise disable the previous button
         if(selectedMuscleId == 0) {
@@ -287,6 +293,8 @@ public class ExerciseActivity extends AppCompatActivity {
 
 
     private void startCountdown(long duration) {
+        isCountdownRunning = true;
+
         //When countdown is being started for the first time, start the slideshow
         if(millisRemaining == 60000)
             slideShow.start();
@@ -294,7 +302,7 @@ public class ExerciseActivity extends AppCompatActivity {
         if(!isChecked)
             restartExercise();
 
-        isCountdownRunning = true;
+
 
         Activity activity = this;
 
@@ -353,6 +361,10 @@ public class ExerciseActivity extends AppCompatActivity {
             }
         }.start();
 
+    }
+
+    public boolean isCountdownRunning(){
+        return isCountdownRunning;
     }
 
     public void pauseCountdown(){
@@ -556,4 +568,14 @@ public class ExerciseActivity extends AppCompatActivity {
 
     }
 
+
+    //Getters and setters
+
+    public int getSelectedPlanId() {
+        return selectedPlanId;
+    }
+
+    public int getSelectedMuscleId() {
+        return selectedMuscleId;
+    }
 }

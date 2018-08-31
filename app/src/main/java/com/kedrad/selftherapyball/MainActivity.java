@@ -12,6 +12,7 @@ import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Filling menu list with content using custom ArrayAdapter
         listViewMenu = findViewById(R.id.listViewMenu);
-        TypedArray images = getResources().obtainTypedArray(R.array.menu_images);
+        String[] images = getResources().getStringArray(R.array.menu_images);
         
         String[] names = getResources().getStringArray(R.array.menu_pain);
         String[] durations = getResources().getStringArray(R.array.menu_durations);
