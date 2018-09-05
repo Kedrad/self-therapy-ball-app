@@ -30,10 +30,10 @@
     </style>
 
     <style name="CheckboxStyle" parent="AppTheme">
-        <item name="colorAccent">@color/colorPrimaryDark</item>
-        <item name="colorPrimary">@color/colorPrimaryDark</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/carbon_white</item>
+        <item name="colorPrimary">@color/carbon_white</item>
+        <item name="colorPrimaryDark">@color/carbon_white</item>
+        <item name="android:textColorSecondary">@color/carbon_white</item>
     </style>
 
 </resources>
