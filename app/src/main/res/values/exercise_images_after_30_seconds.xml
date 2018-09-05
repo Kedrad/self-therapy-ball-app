@@ -25,7 +25,7 @@
         <item>quadratus_lumborum_3 quadratus_lumborum_4</item>
         <item>gluteus_maximus_3 gluteus_maximus_4</item>
         <item>piriformis_3 piriformis_4</item>
-        <item> gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
+        <item>gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
         <item>tensor_fasciae_latae_3 tensor_fasciae_latae_4</item>
         <item>biceps_femoris_3 biceps_femoris_4</item>
     </string-array>
@@ -39,7 +39,7 @@
     </string-array>
 
     <string-array name="knee_images_after_30_seconds">
-        <item> gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
+        <item>gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
         <item>tensor_fasciae_latae_3 tensor_fasciae_latae_4</item>
         <item>vastus_lateralis_3 vastus_lateralis_4</item>
         <item>vastus_medialis_3 vastus_medialis_4</item>

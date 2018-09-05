@@ -71,7 +71,7 @@ public class BallLocationActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //If activity wasn't started from the Exercise Activity, but from the Exercise Plan, start the new Exercsie Activity
+                //If activity wasn't started from the Exercise Activity, but from the Exercise Plan, start the new Exercise Activity
                 if(getCallingActivity() == null) {
                     Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
                     intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);

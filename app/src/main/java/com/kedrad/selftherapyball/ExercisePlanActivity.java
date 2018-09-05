@@ -118,6 +118,7 @@ public class ExercisePlanActivity extends AppCompatActivity {
                 intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, 0);
                 intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
                 startActivity(intent);
+                finish();
             }
         });
 

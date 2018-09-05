@@ -70,6 +70,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import static com.kedrad.selftherapyball.MainActivity.COMPLETED_FIRST_LAUNCH_SHOWCASE_PREF_NAME;
+import static com.kedrad.selftherapyball.MainActivity.SELECTED_PLAN_ID;
 
 public class ExerciseActivity extends AppCompatActivity {
     //ID of selected exercise plan from the menu activity
@@ -130,7 +131,7 @@ public class ExerciseActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Receiving selected plan ID from the menu activity
-        selectedPlanId = getIntent().getIntExtra(MainActivity.SELECTED_PLAN_ID, 0);
+        selectedPlanId = getIntent().getIntExtra(SELECTED_PLAN_ID, 0);
 
         //Receiving selected muuscle ID from the previous activity
         selectedMuscleId = getIntent().getIntExtra(MainActivity.SELECTED_MUSCLE_ID, 0);
@@ -177,7 +178,28 @@ public class ExerciseActivity extends AppCompatActivity {
             return true;
         }
 
+        if(id == android.R.id.home) {
+            //On home button selected go to Exercise Plan Activity
+            Intent intent = new Intent(ExerciseActivity.this, ExercisePlanActivity.class);
+            intent.putExtra(SELECTED_PLAN_ID, selectedPlanId);
+            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivity(intent);
+            finish();
+            return true;
+        }
+
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed(){
+        //On back button pressed go to Exercise Plan Activity
+        Intent intent = new Intent(ExerciseActivity.this, ExercisePlanActivity.class);
+        intent.putExtra(SELECTED_PLAN_ID, selectedPlanId);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+        finish();
     }
 
     @Override
@@ -215,7 +237,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 Intent intent = new Intent(ExerciseActivity.this, ExerciseActivity.class);
 
                 intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId - 1);
-                intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
+                intent.putExtra(SELECTED_PLAN_ID, selectedPlanId);
                 startActivity(intent);
                 finish();
             }
@@ -227,7 +249,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 Intent intent = new Intent(ExerciseActivity.this, ExerciseActivity.class);
 
                 intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId + 1);
-                intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
+                intent.putExtra(SELECTED_PLAN_ID, selectedPlanId);
                 startActivity(intent);
                 finish();
             }
@@ -240,7 +262,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 Intent intent = new Intent(ExerciseActivity.this, BallLocationActivity.class);
 
                 intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
-                intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
+                intent.putExtra(SELECTED_PLAN_ID, selectedPlanId);
                 startActivityForResult(intent, 0);
             }
         });
