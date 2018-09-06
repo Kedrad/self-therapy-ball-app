@@ -98,5 +98,4 @@
             app:pulse_startFromScratch="true" />
 
     </android.support.constraint.ConstraintLayout>
-
 </RelativeLayout>

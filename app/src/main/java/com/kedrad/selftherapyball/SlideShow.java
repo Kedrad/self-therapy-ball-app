@@ -92,7 +92,7 @@ public class SlideShow {
                 currentImageIndex++;
 
                 // If index reaches maximum go backwards
-                if(currentImageIndex >= instructionImages.length) {
+                if(currentImageIndex >= currentImageArray.length) {
                     ArrayUtils.reverse(currentImageArray);
                     currentImageIndex = 1;
                 }
@@ -100,7 +100,7 @@ public class SlideShow {
                 ((Activity)context).runOnUiThread(new Runnable() {
                     public void run() {
                         imageSwitcher.getNextView().setVisibility(View.INVISIBLE);
-
+                        Log.i("LOADFAIL", currentImageArray[currentImageIndex]);
                         if(!((Activity) context).isFinishing())
                             GlideApp.with(context)
                                     .load(context.getResources().getIdentifier(currentImageArray[currentImageIndex], "drawable", context.getPackageName()))
@@ -108,6 +108,7 @@ public class SlideShow {
 
                                         @Override
                                         public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                                            Log.i("LOADFAIL", target.toString());
                                             return false;
                                         }
 
