@@ -71,6 +71,7 @@ import java.util.TimerTask;
 
 import static com.kedrad.selftherapyball.MainActivity.COMPLETED_FIRST_LAUNCH_SHOWCASE_PREF_NAME;
 import static com.kedrad.selftherapyball.MainActivity.SELECTED_PLAN_ID;
+import static com.kedrad.selftherapyball.MainActivity.STARTED_FROM_SHOWCASE;
 
 public class ExerciseActivity extends AppCompatActivity {
     //ID of selected exercise plan from the menu activity
@@ -154,6 +155,14 @@ public class ExerciseActivity extends AppCompatActivity {
         //Show the next showcase when activity was started from the showcase in the previous activity
         if(getIntent().getBooleanExtra(MainActivity.STARTED_FROM_SHOWCASE, false))
             showShowcase();
+        else if (!getIntent().getBooleanExtra(BallLocationActivity.STARTED_FROM_BALLLOCATIONACTIVITY_EXTRA_NAME, false)){
+            //If activity was not started from the BallLocationActivity, show the ball location
+            Intent intent = new Intent(ExerciseActivity.this, BallLocationActivity.class);
+
+            intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
+            intent.putExtra(SELECTED_PLAN_ID, selectedPlanId);
+            startActivityForResult(intent, 0);
+        }
 
     }
 
@@ -200,6 +209,8 @@ public class ExerciseActivity extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
         finish();
+
+        slideShow.stop();
     }
 
     @Override
@@ -463,6 +474,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(imageSwitcher)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .withRectangleShape()
                 .build()
@@ -472,6 +484,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(progressBar)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_1))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .build()
         );
@@ -480,6 +493,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(navigationButtonsView)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_2))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .build()
         );
@@ -488,6 +502,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(btnBallLocation)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_3))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .build()
         );
@@ -496,6 +511,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(movementDirectionView)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_4))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .withRectangleShape()
                 .build()
@@ -524,6 +540,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(progressBar)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_5))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .setListener(listenerShowcase6)
                 .build()
@@ -550,6 +567,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(fabNextExercise)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_6))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .setListener(listenerShowcase7)
                 .build()
@@ -581,6 +599,7 @@ public class ExerciseActivity extends AppCompatActivity {
                 .setTarget(menuItemHowTo)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text_end))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_activity_7))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 .setListener(listenerShowcase8)
                 .build()

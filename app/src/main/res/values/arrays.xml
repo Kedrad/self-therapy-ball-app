@@ -35,6 +35,9 @@
         <item>@drawable/back</item>
         <item>@drawable/back</item>
         <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
     </integer-array>
 
     <integer-array name="shoulder_ball_location_images">
@@ -50,9 +53,18 @@
         <item>@drawable/back</item>
         <item>@drawable/back</item>
         <item>@drawable/front</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/front</item>
     </integer-array>
 
     <integer-array name="lumbar_spine_ball_location_images">
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/back</item>
+        <item>@drawable/side</item>
+        <item>@drawable/back</item>
         <item>@drawable/back</item>
         <item>@drawable/back</item>
         <item>@drawable/back</item>

@@ -155,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_main_activity))
                 .setDelay(500)
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setListener(listener)
                 .show();
 

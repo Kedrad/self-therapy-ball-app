@@ -4,11 +4,14 @@
         <item>suboccipital_1 suboccipital_2</item>
         <item>neck_extensors_3 neck_extensors_4 neck_extensors_5</item>
         <item>levator_scapulae_4 levator_scapulae_5 levator_scapulae_6</item>
+        <item>suboccipital_1 suboccipital_2</item>
+        <item>neck_extensors_3 neck_extensors_4 neck_extensors_5</item>
+        <item>levator_scapulae_4 levator_scapulae_5 levator_scapulae_6</item>
     </string-array>
 
     <string-array name="shoulder_images_after_30_seconds">
         <item>levator_scapulae_4 levator_scapulae_5 levator_scapulae_6</item>
-        <item>rhomboid_muscles_3 rhomboid_muscles_4</item>
+        <item>rhomboid_muscles_4 rhomboid_muscles_5 rhomboid_muscles_6</item>
         <item>infraspinatus_and_teres_muscles_1 infraspinatus_and_teres_muscles_2 infraspinatus_and_teres_muscles_3</item>
         <item>latissimus_dorsi_muscle_3 latissimus_dorsi_muscle_4</item>
         <item>pectoral_muscles_4 pectoral_muscles_5 pectoral_muscles_6</item>
@@ -16,12 +19,21 @@
     </string-array>
 
     <string-array name="thoracic_spine_images_after_30_seconds">
-        <item>rhomboid_muscles_1 rhomboid_muscles_2</item>
+        <item>rhomboid_muscles_4 rhomboid_muscles_5 rhomboid_muscles_6</item>
+        <item>erector_spinae_and_trapezius_ascending_4 erector_spinae_and_trapezius_ascending_5 erector_spinae_and_trapezius_ascending_6</item>
+        <item>pectoral_muscles_4 pectoral_muscles_5 pectoral_muscles_6</item>
+        <item>rhomboid_muscles_4 rhomboid_muscles_5 rhomboid_muscles_6</item>
         <item>erector_spinae_and_trapezius_ascending_4 erector_spinae_and_trapezius_ascending_5 erector_spinae_and_trapezius_ascending_6</item>
         <item>pectoral_muscles_4 pectoral_muscles_5 pectoral_muscles_6</item>
     </string-array>
 
     <string-array name="lumbar_spine_images_after_30_seconds">
+        <item>quadratus_lumborum_3 quadratus_lumborum_4</item>
+        <item>gluteus_maximus_3 gluteus_maximus_4</item>
+        <item>piriformis_3 piriformis_4</item>
+        <item>gluteus_medius_3 gluteus_medius_4 gluteus_medius_5</item>
+        <item>tensor_fasciae_latae_3 tensor_fasciae_latae_4</item>
+        <item>biceps_femoris_3 biceps_femoris_4</item>
         <item>quadratus_lumborum_3 quadratus_lumborum_4</item>
         <item>gluteus_maximus_3 gluteus_maximus_4</item>
         <item>piriformis_3 piriformis_4</item>

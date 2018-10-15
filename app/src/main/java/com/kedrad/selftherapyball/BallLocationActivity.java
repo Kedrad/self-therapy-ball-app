@@ -20,6 +20,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import carbon.widget.Button;
 import pl.bclogic.pulsator4droid.library.PulsatorLayout;
+import ru.dimorinny.floatingtextbutton.FloatingTextButton;
 import uk.co.deanwild.materialshowcaseview.IShowcaseListener;
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence;
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
@@ -34,6 +35,7 @@ public class BallLocationActivity extends AppCompatActivity {
 
     static final String BALL_LOCATION_IMAGES_ARRAY_SUFFIX = "_ball_location_images";
     static final String BALL_LOCATION_COORDINATES_ARRAY_SUFFIX = "_ball_location_coordinates";
+    static final String STARTED_FROM_BALLLOCATIONACTIVITY_EXTRA_NAME = "STARTED_FROM_BALLLOCATIONACTIVITY";
 
     @BindView(R.id.left_guideline) Guideline leftGuideline;
     @BindView(R.id.right_guideline) Guideline rightGuideline;
@@ -76,6 +78,7 @@ public class BallLocationActivity extends AppCompatActivity {
                     Intent intent = new Intent(BallLocationActivity.this, ExerciseActivity.class);
                     intent.putExtra(MainActivity.SELECTED_PLAN_ID, selectedPlanId);
                     intent.putExtra(MainActivity.SELECTED_MUSCLE_ID, selectedMuscleId);
+                    intent.putExtra(STARTED_FROM_BALLLOCATIONACTIVITY_EXTRA_NAME, true);
                     startActivity(intent);
                 }
 
@@ -184,6 +187,7 @@ public class BallLocationActivity extends AppCompatActivity {
                 .setTarget(pulsator)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_ball_location_activity))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 ;
 
@@ -191,6 +195,7 @@ public class BallLocationActivity extends AppCompatActivity {
                 .setTarget(fab)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_ball_location_activity_1))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setListener(listener)
                 ;
 

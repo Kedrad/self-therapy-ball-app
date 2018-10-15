@@ -20,6 +20,7 @@ import com.kogitune.activity_transition.ActivityTransition;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import carbon.widget.Button;
+import ru.dimorinny.floatingtextbutton.FloatingTextButton;
 import uk.co.deanwild.materialshowcaseview.IShowcaseListener;
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence;
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseView;
@@ -31,7 +32,7 @@ public class ExercisePlanActivity extends AppCompatActivity {
     @BindView(R.id.toolbar) Toolbar toolbar;
     @BindView(R.id.iv_background) ImageView imageViewBackground;
     @BindView(R.id.listViewExercises) ListView listViewExercises;
-    @BindView(R.id.fab) FloatingActionButton fab;
+    @BindView(R.id.fab) FloatingTextButton fab;
 
     int selectedPlanId; //ID of selected exercise plan from the menu activity
 
@@ -179,6 +180,7 @@ public class ExercisePlanActivity extends AppCompatActivity {
                 .setTarget(showcaseViewList)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_plan_activity))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setDelay(500)
                 ;
 
@@ -186,6 +188,7 @@ public class ExercisePlanActivity extends AppCompatActivity {
                 .setTarget(showcaseViewListItem)
                 .setDismissText(getResources().getString(R.string.showcase_got_it_text))
                 .setContentText(getResources().getString(R.string.showcase_text_exercise_plan_activity_1))
+                .setMaskColour(getResources().getColor(R.color.colorShowcaseMask))
                 .setListener(listener)
                 ;
 
